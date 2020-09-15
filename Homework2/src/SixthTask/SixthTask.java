@@ -11,7 +11,7 @@ public class SixthTask {
         System.out.println("Введите целое число");
         int number = Integer.parseInt(reader.readLine());
 
-        System.out.println(getParityNumber(number) + "." + " " + getPositiveNegativeNumber(number));
+        System.out.println(getParityNumber(number) + "" + " " + getPositiveNegativeNumber(number));
     }
 
     public static String getParityNumber(int number) {
