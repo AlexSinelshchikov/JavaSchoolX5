@@ -4,11 +4,11 @@ public class Processor {
 
     private double clockFrequency;
     private int numberOfCores;
-    private int memoryCache;
+    private double memoryCache;
     private String title;
     private String brandProcessor;
 
-    public Processor(double clockFrequency, int numberOfCores, int memoryCache, String title, String brandProcessor) {
+    public Processor(double clockFrequency, int numberOfCores, double memoryCache, String title, String brandProcessor) {
         this.clockFrequency = clockFrequency;
         this.numberOfCores = numberOfCores;
         this.memoryCache = memoryCache;
@@ -24,7 +24,7 @@ public class Processor {
         return numberOfCores;
     }
 
-    public int getMemoryCache() {
+    public double getMemoryCache() {
         return memoryCache;
     }
 
@@ -44,7 +44,7 @@ public class Processor {
         this.numberOfCores = numberOfCores;
     }
 
-    public void setMemoryCache(int memoryCache) {
+    public void setMemoryCache(double memoryCache) {
         this.memoryCache = memoryCache;
     }
 

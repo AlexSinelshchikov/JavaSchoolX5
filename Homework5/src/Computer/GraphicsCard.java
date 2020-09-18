@@ -48,7 +48,7 @@ public class GraphicsCard {
 
     @Override
     public String toString() {
-        return "Видеокарта: " + " Производитель - " + brandGraphicsCard + ";" + " Тип памяти - " + typeGraphicsCard + ";"
+        return " Видеокарта:" + " Производитель - " + brandGraphicsCard + ";" + " Тип памяти - " + typeGraphicsCard + ";"
                 + " Объем памяти - " + amountOfMemoryGraphicsCard + ";" + " Охлаждение - " + coolingGraphicsCard + ".";
     }
 }

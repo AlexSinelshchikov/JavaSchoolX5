@@ -2,11 +2,11 @@ package Computer;
 
 public class Ram {
     private String brandRam;
-    private double amountOfMemoryRam;
+    private int amountOfMemoryRam;
     private double frequency;
     private String typeRam;
 
-    public Ram (String brandRam, double amountOfMemoryRam, double frequency, String typeRam) {
+    public Ram (String brandRam, int amountOfMemoryRam, double frequency, String typeRam) {
         this.brandRam = brandRam;
         this.amountOfMemoryRam = amountOfMemoryRam;
         this.frequency = frequency;
@@ -33,7 +33,7 @@ public class Ram {
         this.brandRam = brandRam;
     }
 
-    public void setAmountOfMemoryRam(double amountOfMemoryRam) {
+    public void setAmountOfMemoryRam(int amountOfMemoryRam) {
         this.amountOfMemoryRam = amountOfMemoryRam;
     }
 
