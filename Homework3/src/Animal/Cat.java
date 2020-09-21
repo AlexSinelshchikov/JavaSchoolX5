@@ -2,14 +2,38 @@ package Animal;
 
 public class Cat extends Animal {
 
-    public String lengthOfHair;
-    public int numberOfMiceCaughtPerWeek;
-    public int hoursOfSleepPerDay;
+    private String lengthOfHair;
+    private int numberOfMiceCaughtPerWeek;
+    private int hoursOfSleepPerDay;
 
     public Cat ( String food, String location, String lengthOfHair, int numberOfMiceCaughtPerWeek, int hoursOfSleepPerDay) {
         super(food, location);
         this.lengthOfHair = lengthOfHair;
         this.numberOfMiceCaughtPerWeek = numberOfMiceCaughtPerWeek;
+        this.hoursOfSleepPerDay = hoursOfSleepPerDay;
+    }
+
+    public String getLengthOfHair() {
+        return lengthOfHair;
+    }
+
+    public void setLengthOfHair(String lengthOfHair) {
+        this.lengthOfHair = lengthOfHair;
+    }
+
+    public int getNumberOfMiceCaughtPerWeek() {
+        return numberOfMiceCaughtPerWeek;
+    }
+
+    public void setNumberOfMiceCaughtPerWeek(int numberOfMiceCaughtPerWeek) {
+        this.numberOfMiceCaughtPerWeek = numberOfMiceCaughtPerWeek;
+    }
+
+    public int getHoursOfSleepPerDay() {
+        return hoursOfSleepPerDay;
+    }
+
+    public void setHoursOfSleepPerDay(int hoursOfSleepPerDay) {
         this.hoursOfSleepPerDay = hoursOfSleepPerDay;
     }
 

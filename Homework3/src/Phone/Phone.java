@@ -2,14 +2,38 @@ package Phone;
 
 public class Phone {
 
-    public long number;
-    public String model;
-    public double weight;
+    private long number;
+    private String model;
+    private double weight;
 
     public Phone(long number, String model, double weight) {
         this(number, model);
         this.number = number;
         this.model = model;
+        this.weight = weight;
+    }
+
+    public long getNumber() {
+        return number;
+    }
+
+    public void setNumber(long number) {
+        this.number = number;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 

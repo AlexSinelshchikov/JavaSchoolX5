@@ -1,11 +1,11 @@
 package Student;
 
 public class Student {
-    public String firstName;
-    public String lastName;
-    public String group;
-    public double averageMark;
-    public int sumScholarship;
+    private String firstName;
+    private String lastName;
+    private String group;
+    private double averageMark;
+    protected int sumScholarship;
 
     public Student (String firstName, String lastName, String group, double averageMark ) {
         this.firstName = firstName;
@@ -14,12 +14,54 @@ public class Student {
         this.averageMark = averageMark;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
+    public double getAverageMark() {
+        return averageMark;
+    }
+
+    public void setAverageMark(double averageMark) {
+        this.averageMark = averageMark;
+    }
+
+    public int getSumScholarship() {
+        return sumScholarship;
+    }
+
+    public void setSumScholarship(int sumScholarship) {
+        this.sumScholarship = sumScholarship;
+    }
+
     public void getScholarship () {
 
         if (averageMark >= 5) {
             sumScholarship = 100;
         }
-        else sumScholarship = 80;
+        else {
+            sumScholarship = 80;
+        }
 
         System.out.println("Студент." + " " + "Стипендия: " + sumScholarship);
     }

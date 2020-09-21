@@ -8,17 +8,17 @@ public class Subscribers extends Phone {
         Phone samsung = new Phone(89011234587L, "samsung", 136.3d);
         Phone sony = new Phone(89772354782L, "sony", 112.6d);
 
-        System.out.println(nokia.number + " " + nokia.model + " " + nokia.weight);
-        System.out.println(samsung.number + " " + samsung.model + " " + samsung.weight);
-        System.out.println(sony.number + " " + sony.model + " " + samsung.weight);
+        System.out.println(nokia.getNumber() + " " + nokia.getModel() + " " + nokia.getWeight());
+        System.out.println(samsung.getNumber() + " " + samsung.getModel() + " " + samsung.getWeight());
+        System.out.println(sony.getNumber() + " " + sony.getModel() + " " + samsung.getWeight());
 
         nokia.receiveCall("Юра Хой");
         samsung.receiveCall("Виктор Цой");
         sony.receiveCall("Фредди Меркьюри");
 
-        getNumber(nokia.number);
-        getNumber(samsung.number);
-        getNumber(sony.number);
+        getNumber(nokia.getNumber());
+        getNumber(samsung.getNumber());
+        getNumber(sony.getNumber());
 
         nokia.receiveCall("Юра Хой", 89097245859L);
         samsung.receiveCall("Виктор Цой", 89011234587L);

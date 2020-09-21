@@ -2,12 +2,28 @@ package Animal;
 
 public class Dog extends Animal {
 
-    public String character;
-    public String profession;
+    private String character;
+    private String profession;
 
     public Dog (String food, String location, String character, String profession) {
         super(food, location);
         this.character = character;
+        this.profession = profession;
+    }
+
+    public String getCharacter() {
+        return character;
+    }
+
+    public void setCharacter(String character) {
+        this.character = character;
+    }
+
+    public String getProfession() {
+        return profession;
+    }
+
+    public void setProfession(String profession) {
         this.profession = profession;
     }
 
