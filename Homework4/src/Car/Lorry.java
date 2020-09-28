@@ -2,10 +2,18 @@ package Car;
 
 public class Lorry extends Car {
 
-    double lorryCarrying;
+    private double lorryCarrying;
 
     public Lorry(String carModel, String carClass, double carWeight, double lorryCarrying, Engine carMotor) {
         super(carModel, carClass, carWeight, carMotor);
+        this.lorryCarrying = lorryCarrying;
+    }
+
+    public double getLorryCarrying() {
+        return lorryCarrying;
+    }
+
+    public void setLorryCarrying(double lorryCarrying) {
         this.lorryCarrying = lorryCarrying;
     }
 
@@ -26,7 +34,6 @@ public class Lorry extends Car {
 
     @Override
     public void printInfo() {
-        System.out.println("Модель автомобиля: " + carModel + ". Класс: " + carClass + ". Вес: " + carWeight + carMotor + ". Грузоподъемность: " + lorryCarrying);
-
+        System.out.println("Модель автомобиля: " + getCarClass() + ". Класс: " + getCarClass() + ". Вес: " + getCarWeight() + getCarMotor() + ". Грузоподъемность: " + lorryCarrying);
     }
 }

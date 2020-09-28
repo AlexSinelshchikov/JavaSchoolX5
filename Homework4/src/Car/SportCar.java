@@ -1,10 +1,18 @@
 package Car;
 
 public class SportCar extends Car {
-    double topSpeed;
+    private double topSpeed;
 
     public SportCar (String carModel, String carClass, double carWeight, Engine carMotor, double topSpeed) {
         super (carModel, carClass, carWeight, carMotor);
+        this.topSpeed = topSpeed;
+    }
+
+    public double getTopSpeed() {
+        return topSpeed;
+    }
+
+    public void setTopSpeed(double topSpeed) {
         this.topSpeed = topSpeed;
     }
 
@@ -25,7 +33,7 @@ public class SportCar extends Car {
 
     @Override
     public void printInfo() {
-        System.out.println("Модель автомобиля: " + carModel + ". Класс: " + carClass + ". Вес: " + carWeight + carMotor + ". Максимальная скорость: " + topSpeed);
 
+        System.out.println("Модель автомобиля: " + getCarModel() + ". Класс: " + getCarClass() + ". Вес: " + getCarWeight() + getCarMotor() + ". Максимальная скорость: " + topSpeed);
     }
 }
