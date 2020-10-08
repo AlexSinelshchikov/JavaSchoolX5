@@ -1,13 +1,8 @@
 package Animal;
 
-public class Veterinarian extends Animal {
+public class Veterinarian  {
 
-    private Veterinarian(String food, String location) {
-
-        super(food, location);
-    }
-
-    public void treatAnimal(Animal[] animal) {
-        System.out.println(getFood() + " " + getLocation());
+    public void treatAnimal(Animal animal) {
+        System.out.println(animal.getFood() + " " + animal.getLocation());
     }
 }

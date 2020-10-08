@@ -4,7 +4,7 @@ public class Student {
     private String firstName;
     private String lastName;
     private String group;
-    private double averageMark;
+    protected double averageMark;
     protected int sumScholarship;
 
     public Student (String firstName, String lastName, String group, double averageMark ) {
